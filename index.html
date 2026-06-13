@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pondok Pesantren Arriyadloh Assanusiyah</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fff8;
+color:#222;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,70,30,.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:white;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ffd700;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,70,30,.75),
+rgba(0,70,30,.75)),
+url('https://ibb.co.com/0VKbzqRX"><img src="https://i.ibb.co.com/Tq13NcxT/Whats-App-Image-2026-06-13-at-11-42-27.jpg') center/cover;
+color:white;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+}
+
+.hero-btn{
+margin-top:35px;
+display:inline-block;
+padding:15px 35px;
+background:#ffd700;
+color:#00461e;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+}
+
+/* SECTION */
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+color:#0c6a33;
+margin-bottom:50px;
+position:relative;
+}
+
+.title::after{
+content:"";
+width:100px;
+height:4px;
+background:#ffd700;
+display:block;
+margin:15px auto;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+line-height:2;
+}
+
+/* VISI MISI */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.box:hover{
+transform:translateY(-10px);
+}
+
+.box h3{
+color:#0c6a33;
+margin-bottom:15px;
+}
+
+/* PROGRAM */
+
+.program{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.program-box{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.program-box:hover{
+background:#0c6a33;
+color:white;
+transform:translateY(-10px);
+}
+
+.program-box span{
+font-size:50px;
+display:block;
+margin-bottom:15px;
+}
+
+/* KONTAK */
+
+.kontak{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.kontak-box{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.kontak-box h3{
+margin-bottom:15px;
+color:#0c6a33;
+}
+
+/* FOOTER */
+
+footer{
+background:#00461e;
+padding:40px;
+text-align:center;
+color:white;
+}
+
+footer p{
+margin:10px 0;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social a{
+display:inline-block;
+margin:0 10px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.social a:hover{
+color:#ffd700;
+}
+
+/* ANIMATION */
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+    .foto-pondok{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #ffd700;
+margin-bottom:20px;
+box-shadow:0 0 30px rgba(255,215,0,.6);
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-12px);
+}
+}
+
+.hero-content h1{
+font-size:34px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">🕌 Arriyadloh Assanusiyah</div>
+
+<ul>
+<li><a href="#home">Beranda</a></li>
+<li><a href="#sejarah">Sejarah</a></li>
+<li><a href="#visi">Visi Misi</a></li>
+<li><a href="#program">Program</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+    <img src="https://ibb.co.com/0VKbzqRX"><img src="https://i.ibb.co.com/Tq13NcxT/Whats-App-Image-2026-06-13-at-11-42-27.jpg" class="foto-pondok">
+
+<h1>PONDOK PESANTREN<br>ARRIYADLOH ASSANUSIYAH</h1>
+
+<p>
+Melestarikan Tradisi Ulama, Membangun Generasi Mulia.
+Pusat pendidikan Islam yang memadukan ilmu agama,
+akhlakul karimah, serta keterampilan hidup untuk
+mencetak generasi yang beriman, berilmu dan mandiri.
+</p>
+
+<a href="#sejarah" class="hero-btn">
+Jelajahi Pondok
+</a>
+
+</div>
+
+</section>
+
+<!-- SEJARAH -->
+
+<section id="sejarah">
+
+<h2 class="title fade">Sejarah Pondok</h2>
+
+<div class="card fade">
+
+<p>
+
+Pondok Pesantren Arriyadloh Assanusiyah memiliki hubungan erat dengan perjuangan dakwah Al-Mukarrom Syekh Muhammad Sanusi yang menjadi tokoh penyebar agama Islam di wilayah Banjar dan sekitarnya.
+
+Hingga saat ini makam beliau yang berada di lingkungan pesantren menjadi salah satu tujuan ziarah masyarakat dari berbagai daerah di Indonesia bahkan luar Pulau Jawa.
+
+Perjuangan beliau kemudian diteruskan oleh putranya yaitu Al-Mukarrom Syekh Sa'dun Sanusi yang melanjutkan pembinaan umat dan pendidikan Islam di lingkungan masyarakat.
+
+Pada tahun 2010 Pondok Pesantren Arriyadloh Assanusiyah kembali berdiri dan berkembang melalui perjuangan cucu Syekh Muhammad Sanusi yaitu Al-Mukarrom Kyai Haji Hasan Habibi bersama adiknya Al-Mukarrom Kyai Husen Mahmud.
+
+Dengan tetap menjaga nilai-nilai keilmuan para ulama terdahulu, pesantren terus berkembang menjadi pusat pendidikan Islam yang mengajarkan ilmu agama, pembentukan akhlak mulia, serta pengembangan berbagai keterampilan bagi para santri.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- VISI MISI -->
+
+<section id="visi">
+
+<h2 class="title fade">Visi & Misi</h2>
+
+<div class="grid">
+
+<div class="box fade">
+<h3>Visi</h3>
+
+<p>
+
+Menjadi pondok pesantren unggulan yang berlandaskan Al-Qur'an dan As-Sunnah dalam mencetak generasi muslim yang berilmu, berakhlakul karimah, mandiri, dan bermanfaat bagi masyarakat.
+
+</p>
+
+</div>
+
+<div class="box fade">
+<h3>Misi</h3>
+
+<ul>
+
+<li>Pendalaman ilmu agama dan kitab kuning.</li>
+<li>Pembinaan akhlak santri.</li>
+<li>Peningkatan kemampuan Qiroatul Qur'an.</li>
+<li>Pelatihan dakwah dan ceramah.</li>
+<li>Pengembangan kewirausahaan.</li>
+<li>Pelatihan pertanian.</li>
+<li>Pelatihan peternakan.</li>
+<li>Pelatihan pertukangan.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROGRAM -->
+
+<section id="program">
+
+<h2 class="title fade">Program Unggulan</h2>
+
+<div class="program">
+
+<div class="program-box fade">
+<span>📖</span>
+<h3>Kitab Kuning</h3>
+</div>
+
+<div class="program-box fade">
+<span>🎤</span>
+<h3>Ceramah Agama</h3>
+</div>
+
+<div class="program-box fade">
+<span>📜</span>
+<h3>Qiroatul Qur'an</h3>
+</div>
+
+<div class="program-box fade">
+<span>💼</span>
+<h3>Kewirausahaan</h3>
+</div>
+
+<div class="program-box fade">
+<span>🌾</span>
+<h3>Pertanian</h3>
+</div>
+
+<div class="program-box fade">
+<span>🔨</span>
+<h3>Pertukangan</h3>
+</div>
+
+<div class="program-box fade">
+<span>🐐</span>
+<h3>Peternakan</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- KONTAK -->
+
+<section id="kontak">
+
+<h2 class="title fade">Kontak & Lokasi</h2>
+
+<div class="kontak">
+
+<div class="kontak-box fade">
+
+<h3>📍 Alamat</h3>
+
+<p>
+
+Komplek Makam Syekh Muhammad Sanusi<br>
+Dusun Sukahurip RT 05/RW 03<br>
+Desa Langensari Kecamatan Langensari<br>
+Kota Banjar Patroman Jawa Barat
+
+</p>
+
+</div>
+
+<div class="kontak-box fade">
+
+<h3>📞 Kontak</h3>
+
+<p><b>Putra :</b> 0878-7913-6943</p>
+<p><b>Putri :</b> 0831-4245-7580</p>
+
+</div>
+
+<div class="kontak-box fade">
+
+<h3>🌐 Media Sosial</h3>
+
+<p>
+Instagram : @arriyadlohassanusiyah
+</p>
+
+<p>
+TikTok : @arras780
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MAP -->
+
+<section>
+
+<h2 class="title fade">Lokasi Pondok</h2>
+
+<div class="card fade">
+
+<iframe
+src="https://maps.google.com/maps?q=Langensari%20Banjar&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;border-radius:20px;">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Pondok Pesantren Arriyadloh Assanusiyah</h2>
+
+<p>
+Melestarikan Tradisi Ulama, Membangun Generasi Mulia
+</p>
+
+<div class="social">
+
+<a href="https://www.instagram.com/arriyadlohassanusiyah">
+Instagram
+</a>
+
+<a href="https://www.tiktok.com/@arras780">
+TikTok
+</a>
+
+</div>
+
+<p style="margin-top:20px;">
+© 2026 Pondok Pesantren Arriyadloh Assanusiyah
+</p>
+
+</footer>
+
+<script>
+
+const fade=document.querySelectorAll('.fade');
+
+window.addEventListener('scroll',()=>{
+
+fade.forEach(item=>{
+
+let top=item.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+item.classList.add('show');
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
